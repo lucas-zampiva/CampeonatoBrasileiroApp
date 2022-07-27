@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding-bottom: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0a1014;
+}
+
+#login {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login label {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#login>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e9edefe0;
+}
+
+#login>div input {
+    display: flex;
+    align-self: stretch;
+    height: 2.5rem;
+    outline: none;
+    border: 0;
+    padding: 0 1rem;
+    flex-grow: 1;
+    border-radius: 0.4rem;
+    background: #2A3942;
+    color: #fff;
+}
+
+#login>div button {
+    background: #00a884;
+    border: 0;
+    outline: none;
+    height: 2.5rem;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#login>div button:hover {
+    background: #059477;
+}
+
+#chat {
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    height: 3.5rem;
+    background: #202c33;
+    justify-content: space-between;
+}
+
+header>div {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+header>div img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header>div>svg:first-child {
+    margin-right: 0.5rem;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages>li {
+    display: flex;
+    flex-direction: column;
+    background-color: #343f46;
+    max-width: 20rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    align-self: flex-start;
+    position: relative;
+    padding: 0;
+}
+
+#messages>li.message::before {
+    content: '';
+    position: absolute;
+    ;
+    top: 0px;
+    left: -8px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #343f46;
+}
+
+#messages>li.lance-lance::before {
+    content: '';
+    position: absolute;
+    ;
+    top: 0px;
+    left: -8px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #343f46;
+}
+
+#messages>li.message {
+    align-self: flex-end;
+}
+
+#messages>li.sender-message {
+    background-color: #00a884;
+    align-self: flex-end;
+}
+
+#messages>li.sender-message::after {
+    content: '';
+    position: absolute;
+    ;
+    top: 0px;
+    right: -8px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #00a884;
+}
+
+#messages>li div>span {
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+#messages>li>span {
+    font-size: 0.75rem;
+}
+
+#messages>li div {
+    display: flex;
+}
+
+#messages>li div span:last-child {
+    color: #ffffff99;
+    font-size: 0.60rem;
+    align-self: flex-end;
+    margin-left: 5px;
+    margin-bottom: -5px;
+}
+
+#messages>li.message div span:last-child {
+    margin-left: 2.5rem;
+}
+
+#messages>li.lance-lance div span:last-child {
+    margin-left: 2.5rem;
+}
+
+#messages>li.sender-message>span {
+    display: none;
+}
+
+#messages>li {
+    padding: 0.5rem 0.5rem;
+}
+
+footer {
+    background: #202c33;
+    padding: 0.25rem;
+    position:
+        fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer>div>svg:first-child {
+    margin-right: 10px;
+}
+
+footer form {
+    display: flex;
+    width: 100%;
+}
+
+footer input {
+    border: none;
+    padding: 0 1rem;
+    flex-grow: 1;
+    border-radius: 0.4rem;
+    margin: 0.25rem;
+    background: #2A3942;
+    color: #fff;
+}
+
+footer input:focus {
+    outline: none;
+}
+
+form>button {
+    border: 0;
+    margin: 0;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
